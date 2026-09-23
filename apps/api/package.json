@@ -1,0 +1,19 @@
+{
+  "name": "@devops-task/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/http.js && node --check src/db.js && node --check src/cache.js && node --check src/counter.js && node --check src/log.js",
+    "test": "node --test src/*.test.js"
+  },
+  "dependencies": {
+    "iovalkey": "0.4.0",
+    "pg": "8.23.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "devops-task",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter @devops-task/api dev",
+    "dev:web": "pnpm --filter @devops-task/web dev",
+    "start:api": "pnpm --filter @devops-task/api start",
+    "start:web": "pnpm --filter @devops-task/web start",
+    "check": "pnpm -r --if-present check",
+    "test": "pnpm -r --if-present test"
+  }
+}

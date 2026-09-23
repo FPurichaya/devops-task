@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Click counter</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Postgres + Valkey</p>
+      <h1>Click counter</h1>
+      <p class="lede">
+        One button. The API increments a row in Postgres, writes that count
+        into Valkey, then reads the cache before it answers.
+      </p>
+      <p class="count" id="count" aria-live="polite">—</p>
+      <button id="record" type="button">Record click</button>
+      <p class="status" id="status" role="status"></p>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
