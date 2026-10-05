@@ -12,6 +12,8 @@ updates:
       interval: weekly
 
   - package-ecosystem: docker
-    directory: /
+    directories:
+      - /apps/api
+      - /apps/web
     schedule:
       interval: weekly
