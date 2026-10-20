@@ -1,6 +1,6 @@
 # DevOps task
 
-Small pnpm monorepo for a junior DevOps exercise. The application is already written. Container images, Compose, and GitHub Actions are intentionally missing. The assignment is [TASKS.md](./TASKS.md).
+Small pnpm monorepo for a DevOps exercise. The application is already written. Tasks 1-5 containerize it and publish images. Tasks 6-10 run those images on Amazon EKS. The assignment is [TASKS.md](./TASKS.md).
 
 ## What it does
 

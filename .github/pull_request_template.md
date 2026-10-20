@@ -20,6 +20,13 @@ List the commands you ran and the result that shows the task is done. A green CI
 - [ ] Application containers run as a non-root user
 - [ ] Postgres and Valkey are not published on a public interface
 - [ ] `apps/` behavior is unchanged, except operational configuration this task allows
+- [ ] OpenTofu providers and modules are pinned to an exact version, and `.terraform.lock.hcl` is committed
+- [ ] No state files, kubeconfigs, AWS keys, or passwords in git
+- [ ] No `0.0.0.0/0` on the EKS API or the web load balancer
+- [ ] No GitHub Actions job applies or destroys infrastructure
+- [ ] Fork pull requests cannot assume the AWS plan role
+
+For a pull request that does not touch `infra/` or `.github/workflows/infra-plan.yml`, check the last five boxes. They apply once that work starts.
 
 ## Exceptions
 
