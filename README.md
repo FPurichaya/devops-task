@@ -30,7 +30,7 @@ TASKS.md     the work to do
 
 ## Prerequisites
 
-- Node.js 24.22.1 (see `.nvmrc`). The app is written for the Node 24 LTS line.
+- Node.js 24.21.0 (see `.nvmrc`). The app is written for the Node 24 LTS line.
 - pnpm 11.20.0. From the repo root, `corepack enable` then `corepack install` will use the version in `packageManager`.
 - PostgreSQL 18 and Valkey 9, only if you want to press the button before the stack is containerized.
 
