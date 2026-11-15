@@ -176,6 +176,7 @@ version_marker = None
 while True:
     command = [
         "aws", "s3api", "list-object-versions",
+        "--no-paginate",
         "--bucket", bucket,
         "--region", region,
         "--max-keys", "1000",
